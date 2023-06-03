@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Original+Surfer&family=Philosopher:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .HeroBackgroundImage {
+    background-image: url("../src/assets/img/png/heroBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .contactBackgroundImage {
+    background-image: url("../src/assets/img/png/contactBackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .aboutbackgroundImage {
+    background-image: url("../src/assets/img/png/cannabis-plant.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cannabisbackgroundImage {
+    background-image: url("../src/assets/img/png/cannabis-plant2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .canadaBackgroundImage {
+    background-image: url("../src/assets/img/png/canadaBackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .potientBackgroundImage {
+    background-image: url("../src/assets/img/png/spaceBackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .popularBackgroundImage {
+    background-image: url("../src/assets/img/png/popularBackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .latestBackgroundImage {
+    background-image: url("../src/assets/img/png/latestBackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footerBackgroundImage {
+    background-image: url("../src/assets/img/png/footerBackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body {
+    background-color: #07031d;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .ff_philosopher {
+    font-family: "Philosopher";
+  }
+
+  .ff_montserrat {
+    font-family: "Montserrat";
+  }
+
+  .ff_surfer {
+    font-family: "Original Surfer";
+  }
+  .box_shadow {
+    box-shadow: 0 0 8px 0 #aa1ffe, 0 0 2px 0 #dd22e6;
+  }
+  .text_shadow {
+    text-shadow: 1px 0px #411a68;
+  }
+  .circleShadow {
+    box-shadow: 0 4px 15px -5px white;
+  }
+  .text_gridient {
+    background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .navStroke {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+  }
+  .aboutbackground {
+    background: rgba(22, 15, 47, 0.5);
+  }
+
+  .pandaBackground {
+    background: linear-gradient(
+      180deg,
+      #07031d 37.24%,
+      rgba(7, 3, 29, 0.01) 88.23%
+    );
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+  .canadaBackground {
+    background: linear-gradient(
+      253.99deg,
+      #07031d 18.16%,
+      rgba(7, 3, 29, 0) 91.23%
+    );
+  }
+
+  @media (max-width: 1023.98px) {
+    .navOpen {
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 21;
+      transition: 0.4s ease-in-out;
+      background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+      height: 100vh;
+      width: 100%;
+    }
+    .navClose {
+      position: fixed;
+      left: 0;
+      top: -100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 21;
+      transition: 0.4s ease-in-out;
+      background: linear-gradient(126.14deg, #aa1ffe 3.66%, #dd22e6 95.92%);
+      height: 100vh;
+      width: 100%;
+    }
+  }
 }
